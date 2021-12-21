@@ -1,39 +1,41 @@
-<rdf:RDF
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-      xmlns:admin="http://webns.net/mvcb/">
-<foaf:PersonalProfileDocument rdf:about="">
-  <foaf:maker rdf:resource="#me"/>
-  <foaf:primaryTopic rdf:resource="#me"/>
-  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
-  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
-</foaf:PersonalProfileDocument>
-<foaf:Person rdf:ID="me">
-<foaf:name>Ognen Stojanoski</foaf:name>
-<foaf:title>Mr</foaf:title>
-<foaf:givenname>Ognen</foaf:givenname>
-<foaf:family_name>Stojanoski</foaf:family_name>
-<foaf:nick>Ogi</foaf:nick>
-<foaf:mbox_sha1sum>84c97ba6944ff43c3c82aea5edcdd83d43f6e3cf</foaf:mbox_sha1sum>
-<foaf:homepage rdf:resource="facebook.com/ognen.stojanoski"/>
-<foaf:phone rdf:resource="tel:(+389)-75-44-22-96"/>
-<foaf:workplaceHomepage rdf:resource="https://password.mk/"/>
-<foaf:workInfoHomepage rdf:resource="Production Manager / Organizing Music Events"/>
-<foaf:schoolHomepage rdf:resource="https://rjk.edu.mk/"/>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Robert</foaf:name>
-<foaf:mbox_sha1sum>033fee7bbc8b85c298c46943829a4a1d1ebf93c6</foaf:mbox_sha1sum>
-<rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/robert-ilievski/wbs-foaf/master/foaf.ttl?fbclid=IwAR2UBxVST8nMK6sOj2nTsBCBHskrm_oI8jL7L1F-tI-ejKklny8VyJh83xs"/></foaf:Person></foaf:knows>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Marko</foaf:name>
-<foaf:mbox_sha1sum>990e034b5439fa80add1a1934346f3c24156b066</foaf:mbox_sha1sum>
-<rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/KralMarko123/wbs-foaf-profile/master/foaf.ttl?fbclid=IwAR0elYwBVRbaddnFrT2GRhfdBWTx0fIjRgCT6N24ZYRgbtHnzP144gStxjs"/></foaf:Person></foaf:knows>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Aleksandar</foaf:name>
-<foaf:mbox_sha1sum>4b7b067f37bef32d9bf552a4df46cbd35646e94c</foaf:mbox_sha1sum>
-<rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/velickovicaleksandar/wbs/main/foaf.ttl?fbclid=IwAR11SC6usvvI-oWVw3PC68JMXYl_LiTlmxnnNCNPPsRIjIBpyAW74AxF38A"/></foaf:Person></foaf:knows></foaf:Person>
-</rdf:RDF>
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://raw.githubusercontent.com/OgnenStojanoski/WBS/master/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/OgnenStojanoski/WBS/master/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/OgnenStojanoski/WBS/master/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/OgnenStojanoski/WBS/master/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Ognen Stojanoski" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Ognen" ;
+  foaf:family_name "Stojanoski" ;
+  foaf:nick "Ogi" ;
+  foaf:mbox_sha1sum "84c97ba6944ff43c3c82aea5edcdd83d43f6e3cf" ;
+  foaf:homepage <https://raw.githubusercontent.com/OgnenStojanoski/WBS/master/facebook.com/ognen.stojanoski> ;
+  foaf:phone <tel:(+389)-75-44-22-96> ;
+  foaf:workplaceHomepage <https://password.mk/> ;
+  foaf:workInfoHomepage <https://raw.githubusercontent.com/OgnenStojanoski/WBS/master/Production Manager / Organizing Music Events> ;
+  foaf:schoolHomepage <https://rjk.edu.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Robert" ;
+    foaf:mbox_sha1sum "033fee7bbc8b85c298c46943829a4a1d1ebf93c6" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/robert-ilievski/wbs-foaf/master/foaf.ttl?fbclid=IwAR2UBxVST8nMK6sOj2nTsBCBHskrm_oI8jL7L1F-tI-ejKklny8VyJh83xs>
+  ], [
+    a foaf:Person ;
+    foaf:name "Marko" ;
+    foaf:mbox_sha1sum "990e034b5439fa80add1a1934346f3c24156b066" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/KralMarko123/wbs-foaf-profile/master/foaf.ttl?fbclid=IwAR0elYwBVRbaddnFrT2GRhfdBWTx0fIjRgCT6N24ZYRgbtHnzP144gStxjs>
+  ], [
+    a foaf:Person ;
+    foaf:name "Aleksandar" ;
+    foaf:mbox_sha1sum "4b7b067f37bef32d9bf552a4df46cbd35646e94c" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/velickovicaleksandar/wbs/main/foaf.ttl?fbclid=IwAR11SC6usvvI-oWVw3PC68JMXYl_LiTlmxnnNCNPPsRIjIBpyAW74AxF38A>
+  ] .
+
